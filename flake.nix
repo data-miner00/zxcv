@@ -1,5 +1,5 @@
 {
-  description = "A flake for my python workspace.";
+  description = "A flake for an impending battle.";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -15,10 +15,8 @@
       pkgs.mkShell
         {
           buildInputs = [
-            pkgs.just
             pkgs.python3
             pkgs.poetry
-            pkgs.pre-commit
           ];
 
           shellHook = ''
